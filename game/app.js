@@ -31,32 +31,15 @@ function gameResult(randomChoice) {
   // console.log(randomChoice);
   let result = randomChoice();
   console.log(result);
-  if (userChoice === rock) {
-    if (result === paper) {
-      gameDisplay.textContent = "You have won";
-    } else if (result === scissors) {
-      gameDisplay.textContent = "You have lost";
-    } else if (result === rock) {
-      gameDisplay.textContent = "Draw";
-    }
-  } else if (userChoice === paper) {
-    if (result === paper) {
-      gameDisplay.textContent = "Draw";
-    } else if (result === scissors) {
-      gameDisplay.textContent = "You have lost";
-    } else if (result === rock) {
-      gameDisplay.textContent = "You have won";
-    }
-  }
-  if (userChoice === scissors) {
-    if (result === paper) {
-      gameDisplay.textContent = "You have won";
-    } else if (result === scissors) {
-      gameDisplay.textContent = "Draw";
-    } else if (result === rock) {
-      gameDisplay.textContent = "You have lost";
-    }
-  }
+  if (userChoice === result) {
+    gameDisplay.textContent = 'Draw, try again!';
+  } else if (rules[userChoice] === result) {  // check if the cpu choice equals what beats your choice
+    gameDisplay.textContent = 'Congrats, you have won!';
+}  else {
+    gameDisplay.textContent = 'Womp Womp, loser!';
+    
+}
+
 }
 
 function rockChoice() {
