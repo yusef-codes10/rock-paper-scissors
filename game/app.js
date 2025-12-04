@@ -7,10 +7,10 @@ const rock = 'rock';
 const scissors = 'scissors';
 const paper = 'paper';
 
-let userChoice = rock;
+let userChoice = null;
 
-cpuChoice();
-gameResult(cpuChoice);
+rockBtn.addEventListener('click', rockChoice);
+
 
 function cpuChoice() {
     // get a random choice
@@ -21,12 +21,14 @@ function cpuChoice() {
 
 function gameResult(randomChoice) {
     // compares player vs cpu
+    console.log(randomChoice);
     randomChoice === userChoice ? console.log('yes') : console.log('no');
 }
 
 function rockChoice() {
     // calls cpuChoice() and sets userChoice as rock
     userChoice = rock;
+    gameResult(randomChoice);
 }
 
 function paperChoice() {
