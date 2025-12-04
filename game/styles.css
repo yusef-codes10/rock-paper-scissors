@@ -23,6 +23,15 @@ body {
     flex-direction: column;
 }
 
+.game-board h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: unset;
+    color: #8a2be2;
+    margin: 0.5rem auto;
+}
+
 .game-display {
     background-color: burlywood;
     flex: 1;
