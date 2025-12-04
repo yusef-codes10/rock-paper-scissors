@@ -35,11 +35,22 @@ body {
 .game-display {
     background-color: burlywood;
     flex: 1;
+    border: none;
+    border-radius: 1rem;
+}
+
+.game-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
 }
 
 .game-btns button {
     padding: 12px 16px;
     cursor: pointer;
+    border-radius: 1rem;
 }
 
 .game-btns button i {
