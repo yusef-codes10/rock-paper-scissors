@@ -10,9 +10,9 @@ const paper = "paper";
 let userChoice = null;
 
 const rules = {
-    rock: 'scissors',
-    paper: 'rock',
-    scissors: 'paper'
+    rock: scissors,
+    paper: rock,
+    scissors: paper
 }
 
 rockBtn.addEventListener("click", rockChoice);
