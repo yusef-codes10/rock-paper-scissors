@@ -7,19 +7,21 @@ const rock = 'rock';
 const scissors = 'scissors';
 const paper = 'paper';
 
-let userChoice = null;
+let userChoice = rock;
 
 cpuChoice();
+gameResult(cpuChoice);
 
 function cpuChoice() {
     // get a random choice
     let choices = [rock, paper, scissors];
     let randomChoice = choices[Math.floor(Math.random() * choices.length)];
-    console.log(randomChoice);
+    return randomChoice;
 }
 
-function gameResult() {
+function gameResult(randomChoice) {
     // compares player vs cpu
+    randomChoice === userChoice ? console.log('yes') : console.log('no');
 }
 
 function rockChoice() {
