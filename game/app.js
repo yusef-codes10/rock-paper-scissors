@@ -9,6 +9,12 @@ const paper = "paper";
 
 let userChoice = null;
 
+const rules = {
+    rock: 'scissors',
+    paper: 'rock',
+    scissors: 'paper'
+}
+
 rockBtn.addEventListener("click", rockChoice);
 paperBtn.addEventListener("click", paperChoice);
 scissorsBtn.addEventListener("click", scissorsChoice);
@@ -24,9 +30,7 @@ function gameResult(randomChoice) {
   // compares player vs cpu
   // console.log(randomChoice);
   let result = randomChoice();
-  result === userChoice
-    ? console.log("yes")
-    : console.log("no") && console.log(randomChoice);
+  console.log(result);
   if (userChoice === rock) {
     if (result === paper) {
       gameDisplay.textContent = "You have won";
@@ -34,6 +38,23 @@ function gameResult(randomChoice) {
       gameDisplay.textContent = "You have lost";
     } else if (result === rock) {
       gameDisplay.textContent = "Draw";
+    }
+  } else if (userChoice === paper) {
+    if (result === paper) {
+      gameDisplay.textContent = "Draw";
+    } else if (result === scissors) {
+      gameDisplay.textContent = "You have lost";
+    } else if (result === rock) {
+      gameDisplay.textContent = "You have won";
+    }
+  }
+  if (userChoice === scissors) {
+    if (result === paper) {
+      gameDisplay.textContent = "You have won";
+    } else if (result === scissors) {
+      gameDisplay.textContent = "Draw";
+    } else if (result === rock) {
+      gameDisplay.textContent = "You have lost";
     }
   }
 }
