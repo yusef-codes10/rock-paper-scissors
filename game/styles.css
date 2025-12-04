@@ -25,6 +25,7 @@ body {
 
 .game-display {
     background-color: burlywood;
+    flex: 1;
 }
 
 .game-btns button {
