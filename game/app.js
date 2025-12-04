@@ -9,6 +9,8 @@ const rock = 'rock';
 const scissors = 'scissors';
 const paper = 'paper';
 
+let userChoice = null;
+
 function cpuChoice() {
     // get a random choice
 }
