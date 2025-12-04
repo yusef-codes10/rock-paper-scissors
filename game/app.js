@@ -21,14 +21,16 @@ function cpuChoice() {
 
 function gameResult(randomChoice) {
     // compares player vs cpu
-    console.log(randomChoice);
+    // console.log(randomChoice);
+    let result = randomChoice();
+    console.log(result);
     randomChoice === userChoice ? console.log('yes') : console.log('no');
 }
 
 function rockChoice() {
     // calls cpuChoice() and sets userChoice as rock
     userChoice = rock;
-    gameResult(randomChoice);
+    gameResult(cpuChoice);
 }
 
 function paperChoice() {
