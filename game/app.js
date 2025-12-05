@@ -44,8 +44,7 @@ function gameResult(randomChoice) {
     gameDisplay.textContent = 'Draw, try again!';
   } else if (rules[userChoice] === result) {  // check if the cpu choice equals what beats your choice
     gameDisplay.textContent = 'Congrats, you have won!';
-    score++;
-    console.log(score);
+    updateScore();
   } else {
     gameDisplay.textContent = 'Womp Womp, loser!';
 }
@@ -72,6 +71,11 @@ function showCpuIcon(result) {
       break;
   }
 
+}
+
+function updateScore() {
+    score++;
+    console.log(score);
 }
 
 function rockChoice() {
