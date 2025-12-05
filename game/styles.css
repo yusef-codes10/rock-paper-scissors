@@ -39,6 +39,10 @@ body {
     border-radius: 1rem;
 }
 
+.icon-display i {
+    font-size: 5rem;
+}
+
 .game-btns {
     display: flex;
     justify-content: center;
@@ -55,4 +59,8 @@ body {
 
 .game-btns button i {
     font-size: 2rem;
+}
+
+.hidden {
+    display: none;
 }
