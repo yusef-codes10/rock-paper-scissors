@@ -49,6 +49,10 @@ function gameResult(randomChoice) {
 
 }
 
+function showCpuIcon(choice) {
+  
+}
+
 function rockChoice() {
   // calls cpuChoice() and sets userChoice as rock
   userChoice = rock;
@@ -81,3 +85,4 @@ function playPaperSound() {
 // TODO 1- sound effects
 // TODO 2- better styles
 // TODO 3- add a score
+// We have to create a saparate function to show the cpu choice
