@@ -18,6 +18,9 @@ const rules = {
 const rockSound = new Audio('../sound/rock-sound.mp3');
 const paperSound = new Audio('../sound/paper-sound.mp3');
 
+const rockIcon = document.getElementById('rockIcon');
+const paperIcon = document.getElementById('paperIcon');
+const scissorsIcon = document.getElementById('scissorsIcon');
 
 rockBtn.addEventListener("click", rockChoice);
 paperBtn.addEventListener("click", paperChoice);
