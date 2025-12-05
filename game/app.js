@@ -15,7 +15,9 @@ const rules = {
     scissors: paper
 }
 
-const rockSound = Audio()
+const rockSound = new Audio('./sound/rock-sound.mp3');
+const paperSound = new Audio('./sound/paper-sound.mp3');
+
 
 rockBtn.addEventListener("click", rockChoice);
 paperBtn.addEventListener("click", paperChoice);
@@ -48,6 +50,7 @@ function rockChoice() {
   // calls cpuChoice() and sets userChoice as rock
   userChoice = rock;
   gameResult(cpuChoice);
+  playRockSound();
 }
 
 function paperChoice() {
@@ -60,6 +63,10 @@ function scissorsChoice() {
   // calls cpuChoice() and sets userChoice as scissors
   userChoice = scissors;
   gameResult(cpuChoice);
+}
+
+function playRockSound() {
+  rockSound.play();
 }
 
 
