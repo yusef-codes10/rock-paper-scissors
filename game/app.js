@@ -15,6 +15,8 @@ const rules = {
     scissors: paper
 }
 
+const rockSound = Audio()
+
 rockBtn.addEventListener("click", rockChoice);
 paperBtn.addEventListener("click", paperChoice);
 scissorsBtn.addEventListener("click", scissorsChoice);
@@ -59,3 +61,8 @@ function scissorsChoice() {
   userChoice = scissors;
   gameResult(cpuChoice);
 }
+
+
+// TODO 1- sound effects
+// TODO 2- better styles
+// TODO 3- add a score
