@@ -39,6 +39,15 @@ body {
     border-radius: 1rem;
 }
 
+.text-display {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-style: oblique;
+    color: #9325fa;
+    margin: 1rem 0;
+}
+
 .icon-display i {
     font-size: 5rem;
 }
@@ -62,5 +71,5 @@ body {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
