@@ -22,6 +22,8 @@ const rockIcon = document.getElementById('rockIcon');
 const paperIcon = document.getElementById('paperIcon');
 const scissorsIcon = document.getElementById('scissorsIcon');
 
+let score = 0;
+
 rockBtn.addEventListener("click", rockChoice);
 paperBtn.addEventListener("click", paperChoice);
 scissorsBtn.addEventListener("click", scissorsChoice);
