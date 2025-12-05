@@ -1,4 +1,4 @@
-const gameDisplay = document.querySelector(".game-display");
+const gameDisplay = document.querySelector(".text-display");
 const rockBtn = document.getElementById("rockBtn");
 const paperBtn = document.getElementById("paperBtn");
 const scissorsBtn = document.getElementById("scissorsBtn");
