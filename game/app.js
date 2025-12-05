@@ -45,14 +45,28 @@ function gameResult(randomChoice) {
   } else {
     gameDisplay.textContent = 'Womp Womp, loser!';
 }
-  showCpuIcon();
+  showCpuIcon(result);
 }
 
-function showCpuIcon() {
+function showCpuIcon(result) {
   // Hide all in js is better
+  // ! Clear the entire state and update 
   rockIcon.classList.add('hidden');
   paperIcon.classList.add('hidden');
   scissorsIcon.classList.add('hidden');
+
+  // show one icon 
+  switch (result) {
+    case rock:
+      rockIcon.classList.remove("hidden");
+      break;
+    case paper:
+      paperIcon.classList.remove("hidden");
+      break;
+    case scissors:
+      scissorsIcon.classList.remove("hidden");
+      break;
+  }
 
 }
 
