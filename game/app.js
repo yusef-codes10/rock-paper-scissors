@@ -42,14 +42,13 @@ function gameResult(randomChoice) {
     gameDisplay.textContent = 'Draw, try again!';
   } else if (rules[userChoice] === result) {  // check if the cpu choice equals what beats your choice
     gameDisplay.textContent = 'Congrats, you have won!';
-}  else {
+  } else {
     gameDisplay.textContent = 'Womp Womp, loser!';
-    
+}
+  showCpuIcon();
 }
 
-}
-
-function showCpuIcon(choice) {
+function showCpuIcon() {
   // Hide all in js is better
   rockIcon.classList.add('hidden');
   paperIcon.classList.add('hidden');
