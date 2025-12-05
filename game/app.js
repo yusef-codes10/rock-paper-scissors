@@ -50,7 +50,11 @@ function gameResult(randomChoice) {
 }
 
 function showCpuIcon(choice) {
-  
+  // Hide all in js is better
+  rockIcon.classList.add('hidden');
+  paperIcon.classList.add('hidden');
+  scissorsIcon.classList.add('hidden');
+
 }
 
 function rockChoice() {
